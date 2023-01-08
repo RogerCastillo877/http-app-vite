@@ -1,5 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
+import { BreakingBad } from './src/brakingbad/breaking-bad';
+import { UserApp } from './src/users/users-app';
 document.querySelector('#app').innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -14,3 +16,8 @@ document.querySelector('#app').innerHTML = `
     </div>
   </div>
 `;
+
+const element = document.querySelector('.card');
+
+// BreakingBad(element);
+UserApp(element);
